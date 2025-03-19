@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreelaConnect - Buscar Freelancers</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="header-content">
+      <h1>FreelaConnect</h1>
+      <p>Conectando Freelancers e Clientes</p>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="como-funciona.html">Como Funciona</a>
+      <a href="buscar-freelancers.html">Buscar Freelancers</a>
+      <a href="buscar-projetos.html">Buscar Projetos</a>
+      <a href="publicar-projeto.html" id="publish-project-link" style="display: none;">Publicar Projeto</a>
+      <a href="login.html" id="login-link">Login</a>
+      <a href="cadastro.html" id="register-link">Cadastre-se</a>
+      <button id="logout-button" class="cta-button" style="display: none;">Logout</button>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <div class="container">
+    <!-- Seção de Filtros -->
+    <section class="filters">
+      <h2>Encontre o Freelancer Ideal</h2>
+      <form class="filter-form">
+        <input type="text" placeholder="Buscar por habilidades (ex: Designer, Desenvolvedor)">
+        <select>
+          <option value="">Todas as Categorias</option>
+          <option value="design">Design</option>
+          <option value="desenvolvimento">Desenvolvimento</option>
+          <option value="marketing">Marketing</option>
+          <option value="redacao">Redação</option>
+        </select>
+        <button type="submit" class="cta-button">Buscar</button>
+      </form>
+    </section>
+
+    <!-- Lista de Freelancers -->
+    <section class="freelancers-list">
+      <div class="freelancer-card" data-category="design">
+        <img src="freelancer.png" alt="Foto do Freelancer">
+        <h3>João Silva</h3>
+        <p class="skills">Designer Gráfico</p>
+        <p class="bio">Especialista em design de logos e identidade visual.</p>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ (5.0)
+        </div>
+        <a href="#" class="cta-button">Ver Perfil</a>
+      </div>
+      <div class="freelancer-card" data-category="desenvolvimento">
+        <img src="freelancer.png" alt="Foto do Freelancer">
+        <h3>Maria Souza</h3>
+        <p class="skills">Desenvolvedora Web</p>
+        <p class="bio">Desenvolvimento de sites e aplicações web modernas.</p>
+        <div class="rating">
+          ⭐⭐⭐⭐ (4.5)
+        </div>
+        <a href="#" class="cta-button">Ver Perfil</a>
+      </div>
+      <div class="freelancer-card" data-category="redacao">
+        <img src="freelancer.png" alt="Foto do Freelancer">
+        <h3>Carlos Oliveira</h3>
+        <p class="skills">Redator</p>
+        <p class="bio">Redação de artigos, blogs e conteúdo para mídias sociais.</p>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ (5.0)
+        </div>
+        <a href="#" class="cta-button">Ver Perfil</a>
+      </div>
+    </section>
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2023 FreelaConnect. Todos os direitos reservados.</p>
+    <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

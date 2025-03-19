@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreelaConnect - Buscar Projetos</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="header-content">
+      <h1>FreelaConnect</h1>
+      <p>Conectando Freelancers e Clientes</p>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="como-funciona.html">Como Funciona</a>
+      <a href="buscar-freelancers.html">Buscar Freelancers</a>
+      <a href="buscar-projetos.html">Buscar Projetos</a>
+      <a href="publicar-projeto.html" id="publish-project-link" style="display: none;">Publicar Projeto</a>
+      <a href="login.html" id="login-link">Login</a>
+      <a href="cadastro.html" id="register-link">Cadastre-se</a>
+      <button id="logout-button" class="cta-button" style="display: none;">Logout</button>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <div class="container">
+    <!-- Seção de Filtros -->
+    <section class="filters">
+      <h2>Encontre o Projeto Ideal</h2>
+      <form class="filter-form">
+        <input type="text" placeholder="Buscar por palavras-chave (ex: Design, Desenvolvimento)">
+        <select>
+          <option value="">Todas as Categorias</option>
+          <option value="design">Design</option>
+          <option value="desenvolvimento">Desenvolvimento</option>
+          <option value="marketing">Marketing</option>
+          <option value="redacao">Redação</option>
+        </select>
+        <button type="submit" class="cta-button">Buscar</button>
+      </form>
+    </section>
+
+    <!-- Lista de Projetos -->
+    <section class="projects-list">
+      <div class="project-card" data-category="design">
+        <h3>Design de Logo</h3>
+        <p class="description">Criação de um logo moderno para uma startup.</p>
+        <p class="budget">Orçamento: R$ 1.000,00</p>
+        <p class="skills">Habilidades necessárias: Design Gráfico, Adobe Illustrator</p>
+        <a href="#" class="cta-button">Ver Detalhes</a>
+      </div>
+      <div class="project-card" data-category="desenvolvimento">
+        <h3>Desenvolvimento de Site</h3>
+        <p class="description">Desenvolvimento de um site institucional responsivo.</p>
+        <p class="budget">Orçamento: R$ 5.000,00</p>
+        <p class="skills">Habilidades necessárias: HTML, CSS, JavaScript</p>
+        <a href="#" class="cta-button">Ver Detalhes</a>
+      </div>
+      <div class="project-card" data-category="redacao">
+        <h3>Redação de Artigos</h3>
+        <p class="description">Redação de 10 artigos para um blog de tecnologia.</p>
+        <p class="budget">Orçamento: R$ 500,00</p>
+        <p class="skills">Habilidades necessárias: Redação, SEO</p>
+        <a href="#" class="cta-button">Ver Detalhes</a>
+      </div>
+    </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2023 FreelaConnect. Todos os direitos reservados.</p>
+    <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

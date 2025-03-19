@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreelaConnect - Login</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="header-content">
+      <h1>FreelaConnect</h1>
+      <p>Conectando Freelancers e Clientes</p>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="como-funciona.html">Como Funciona</a>
+      <a href="buscar-freelancers.html">Buscar Freelancers</a>
+      <a href="buscar-projetos.html">Buscar Projetos</a>
+      <a href="publicar-projeto.html" id="publish-project-link" style="display: none;">Publicar Projeto</a>
+      <a href="login.html" id="login-link">Login</a>
+      <a href="cadastro.html" id="register-link">Cadastre-se</a>
+      <button id="logout-button" class="cta-button" style="display: none;">Logout</button>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <div class="container">
+    <!-- Seção de Login -->
+    <section class="auth-section">
+      <div class="auth-card">
+        <h2>Login</h2>
+        <form class="auth-form">
+          <input type="email" placeholder="E-mail" required>
+          <input type="password" placeholder="Senha" required>
+          <button type="submit" class="cta-button">Entrar</button>
+        </form>
+        <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a>.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2023 FreelaConnect. Todos os direitos reservados.</p>
+    <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
